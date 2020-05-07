@@ -1,0 +1,40 @@
+:root
+{
+	--pole1: circle();
+	--pole2: circle();
+    --kolor: #000;
+}
+textarea
+{
+	width: 400px;
+	height: 300px;
+}
+.kontener
+{
+	width: 400px;
+	height: 500px;
+	overflow: auto;
+	resize: both;
+	text-align: center;
+}
+.floatLeft,
+.floatRight
+{
+	width: 50%;
+	height: inherit;
+	/* background: #F00; */
+}
+.floatLeft
+{
+	float: left;
+	clip-path: var(--pole1);
+	shape-outside: var(--pole1);
+    background: var(--kolor);
+}
+.floatRight
+{
+	float: right;
+	clip-path: var(--pole2);
+	shape-outside: var(--pole2);
+    background: var(--kolor);
+}
